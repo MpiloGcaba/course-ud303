@@ -17,6 +17,7 @@ class MessageHandler(BaseHTTPRequestHandler):
 
         # 3. Extract the "message" field from the request data.
         message = parse_qs(data)["message"][0]
+        
 
         # Send the "message" field back as the response.
         self.send_response(200)
